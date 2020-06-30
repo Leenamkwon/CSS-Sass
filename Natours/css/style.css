@@ -94,7 +94,7 @@ body {
   }
 
   60% {
-    transform: rotate(120deg);
+    transform: rotate(0);
   }
 
   80% {

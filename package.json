@@ -1,0 +1,23 @@
+{
+  "name": "css-Sass",
+  "version": "1.0.0",
+  "description": "방향: Sass와 이펙트효과 및 애니메이션에 중점을 두고 학습",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leenamkwon/css-Sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leenamkwon/css-Sass/issues"
+  },
+  "homepage": "https://github.com/Leenamkwon/css-Sass#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

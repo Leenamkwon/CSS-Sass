@@ -14,9 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Leenamkwon/css-Sass/issues"
-  },
   "homepage": "https://github.com/Leenamkwon/css-Sass#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"

@@ -30,35 +30,3 @@
     text-align: center;
   }
 }
-
-.heading-primary {
-  color: $color-white;
-  text-transform: uppercase;
-  text-align: center;
-
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-
-  &-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* animation-iteration-count: 3; */
-  }
-
-  &-primary--sub {
-    display: block;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 1.74rem;
-
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
-}

@@ -2,6 +2,7 @@
   background-color: rgb(45, 45, 45);
   padding: 10rem 0;
   font-size: 1.4rem;
+  color: $color-grey-light-1;
 
   &__logo-box {
     text-align: center;
@@ -16,6 +17,7 @@
   &__navigation {
     border-top: 1px solid #eee;
     padding-top: 2rem;
+    display: inline-block;
   }
 
   &__list {
@@ -47,5 +49,13 @@
       box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(5deg) scale(1.3);
     }
+  }
+
+  &__copyright {
+    color: inherit;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
   }
 }

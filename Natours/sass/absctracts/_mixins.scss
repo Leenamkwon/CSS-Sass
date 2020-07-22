@@ -28,3 +28,41 @@
 1200 - 1800: nomal style apply
 1800++: big desktop
 */
+
+/* 
+	breakpoint
+	-phone
+	-tab-port
+	-tab-land
+	-big-desktop
+	*/
+
+/* 
+	ORDER: Base + typhography -> general layout -> grid -> page layout -> components
+	*/
+
+@mixin responed($breakpoint) {
+	@if $breakpoint == phone {
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		@media (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		@media (max-width: 75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == big-desktop {
+		@media (min-width: 112.5em) {
+			@content;
+		}
+	}
+}

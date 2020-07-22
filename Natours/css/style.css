@@ -6,6 +6,16 @@
 1200 - 1800: nomal style apply
 1800++: big desktop
 */
+/* 
+	breakpoint
+	-phone
+	-tab-port
+	-tab-land
+	-big-desktop
+	*/
+/* 
+	ORDER: Base + typhography -> general layout -> grid -> page layout -> components
+	*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -45,17 +55,32 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  height: 100vh;
-  padding: 3rem; }
+  height: 100vh; }
 
 .heading-primary {
   color: #fff;

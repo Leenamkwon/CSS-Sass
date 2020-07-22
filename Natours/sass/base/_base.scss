@@ -8,9 +8,34 @@
 
 html {
 	// This define 1rem
-	font-size: 62.5%;
+	font-size: 62.5%; // 1rem = 10px
+
+	@include responed(big-desktop) {
+		// < 1800px
+		font-size: 75%; // 1rem = 12px
+	}
+
+	@include responed(tab-land) {
+		// < 1200px
+		font-size: 56.25%; // 1rem = 8px
+	}
+
+	@include responed(tab-port) {
+		// < 900px
+		font-size: 50%; // 1rem = 9px
+	}
+
+	@include responed(phone) {
+		// < 600px
+		font-size: 30%; // 1rem = 4.8px
+	}
 }
 
 body {
 	box-sizing: border-box;
+	padding: 3rem;
+
+	@include responed(tab-port) {
+		padding: 0;
+	}
 }

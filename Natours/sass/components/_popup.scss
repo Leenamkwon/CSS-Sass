@@ -27,6 +27,11 @@
 	&__left {
 		width: 33.3333%;
 		display: table-cell;
+
+		@include responed(tab-port) {
+			width: 100%;
+			display: none;
+		}
 	}
 
 	&__right {
@@ -34,11 +39,19 @@
 		display: table-cell;
 		vertical-align: middle;
 		padding: 3rem 5rem;
+
+		@include responed(phone) {
+			width: 100%;
+		}
 	}
 
 	&__img {
 		display: block;
 		width: 100%;
+
+		@include responed(tab-land) {
+			object-fit: fill;
+		}
 	}
 
 	&__text {
@@ -57,6 +70,10 @@
 		-webkit-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
+
+		@include responed(phone) {
+			column-count: 1;
+		}
 	}
 
 	&:target {

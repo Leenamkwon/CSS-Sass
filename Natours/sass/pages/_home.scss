@@ -84,8 +84,43 @@
 	box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 	height: 50rem;
 
+	@include responed(tab-land) {
+		background-image: linear-gradient(
+				105deg,
+				rgba($color-white, 0.9) 0%,
+				rgba($color-white, 0.9) 65%,
+				transparent 35%
+			),
+			url('../../img/nat-10.jpg');
+		background-size: cover;
+		height: 55rem;
+	}
+
+	@include responed(tab-port) {
+		background-image: linear-gradient(
+				to right,
+				rgba($color-white, 0.9) 0%,
+				rgba($color-white, 0.9) 100%
+			),
+			url('../../img/nat-10.jpg');
+		background-size: cover;
+	}
+
+	@include responed(phone) {
+		height: 65rem;
+	}
+
 	&__form {
 		width: 50%;
 		padding: 6rem;
+
+		@include responed(tab-land) {
+			width: 70%;
+		}
+
+		@include responed(tab-port) {
+			width: 100%;
+			padding: 4rem;
+		}
 	}
 }

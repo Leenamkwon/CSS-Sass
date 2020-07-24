@@ -1,23 +1,28 @@
 {
-  "name": "css-Sass",
-  "version": "1.0.0",
-  "description": "방향: Sass와 이펙트효과 및 애니메이션에 중점을 두고 학습",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass sass/main.scss css/style.css -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Leenamkwon/css-Sass.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://github.com/Leenamkwon/css-Sass#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "node-sass": "^4.14.1",
-    "node-sass-import": "^2.0.1"
-  }
+	"name": "css-Sass",
+	"version": "1.0.0",
+	"description": "방향: Sass와 이펙트효과 및 애니메이션에 중점을 두고 학습",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "node-sass sass/main.scss css/style.css -w",
+		"compile": "node-sass sass/main.scss css/style.comp.css",
+		"concat": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+		"prefix": "postcss css/style.concat.css --base --use autoprefixer -o css/style.prefix.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Leenamkwon/css-Sass.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://github.com/Leenamkwon/css-Sass#readme",
+	"devDependencies": {
+		"concat": "^1.0.3"
+	},
+	"dependencies": {
+		"node-sass": "^4.14.1",
+		"node-sass-import": "^2.0.1"
+	}
 }

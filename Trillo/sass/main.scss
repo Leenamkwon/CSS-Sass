@@ -1,17 +1,7 @@
-/*
-COLORS
+@import './base';
+@import './components';
+@import './layout';
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
+// flex grow를 설정하면 빈 공백을 최대한 합쳐서 늘려버린다.
+// flex-basis는 flex-item의 기본 width를 지정합니다.
+// 반응형일 때 flex-item의 넓이가 자동적으로 줄어 드는 것이 싫다면 flex-shrink를 0값을 넣으면 된다. default 1
